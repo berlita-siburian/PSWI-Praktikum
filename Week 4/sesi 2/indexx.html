@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Pertama Saya</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Selamat Datang di Situs Pertama Saya</h1>
+        <p>Halaman pertama Pengembangan Situs Web I.</p>
+        <img src="berlita.jpg.jpeg" alt="foto profil" class="foto">
+
+         <h2>Profil Singkat</h2>
+        <p>Hallo</p>
+        <p>Nama saya Berlita Siburian, dari prodi TRPL-26</p>
+        <p>saya sedang belajar web</p>
+        <button type="button" id="greeting-button">Tampilkan salam</button>
+    </header>
+    <main>
+        <section>
+            <h2>Tujuan Pembelajaran</h2>
+            <ul>
+                <li>Memahami cara kerja web</li>
+                <li>Membuat halaman HTML</li>
+                <li>Menggunakan Git</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Pendaftaran Kegiatan</h2>
+
+            <figure>
+                <img src="vokasi.jpg" width="500" height="250" alt="Gedung vokasi IT DEL">
+                <figcaption> Tempat berlangsungnya kegiatan: Gedung vokasi IT DEL </figcaption>
+            </figure>
+
+
+            <p>Kolom bertanda wajib harus diisi.</p>
+            <form class="card" action="#" method="get">
+                <label for="nama">Nama lengkap (wajib)</label>
+                <input id="nama" name="nama" autocomplete="name" required>
+                <br>
+                <label for="email">Email (wajib)</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+                <br>
+                <label for="telepon">no. Telepon(wajib)</label>
+                <input id="telepon" type="tel" name="telepon" autocomplete="tel" required>
+                <br>
+                <label for="tiket">Jumlah Tiket (1-5, wajib) </label>
+                <input id="tiket" type="number" name="tiket" min="1" max="5" step="1" required>
+                <br>
+                <label for="kode">Kode Peserta (6 angka, wajib)</label>
+                <p id="kode-help">contoh:001234. Gunakan tepat enam angka.</p>
+                <input type="text" id="kode" name="kode" inputmode="numeric" pattern="[0-9]{6}"
+                    aria-describedby="kode-help" required>
+                <br>
+                <br>
+                <label for="prodi">Program studi (wajib)</label>
+                <select id="prodi" name="prodi" required>
+                    <option value="">Pilih program studi</option>
+                    <option value="trpl">D4 TRPL</option>
+                    <option value="ti">D3 Teknologi Informasi</option>
+
+                </select>
+                <fieldset>
+                    <legend>Mode kehadiran (wajib)</legend>
+                    <input id="luring" name="mode" type="radio" value="luring" required>
+                    <label for="luring">Luring</label>
+                    <input id="daring" name="mode" type="radio" value="daring">
+                    <label for="daring">Daring</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Minat Topik</legend>
+                    <input id="HTML" name="Minat" type="checkbox" value="HTML">
+                    <label for="HTML">HTML</label>
+                    <input id="Aksesibilitas" name="Aksesibilitas" type="checkbox" value="Aksesibilitas">
+                    <label for="Aksesibilitas">Aksesibilitas</label>
+                </fieldset>
+                <label for="catatan">Catatan (opsional)</label>
+                <textarea id="catatan" name="catatan" rows="4" maxlength="300"></textarea><br>
+
+                <button type="submit">Daftar</button>
+            </form>
+            <script src="main.js"></script>
+        </section>
+    </main>
+</body>
+
+
+</html>
