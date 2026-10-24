@@ -1,0 +1,252 @@
+
+
+:root {
+    --latar-blkng: #efd2de;
+    --teks: #352b38;
+    --gradien-2: #ee98cd;
+    --gradien-1: #dceca4;
+    --kotak-kecil: #f3cddd;
+    --garis: #6e3780;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--teks);
+    background-color: var(--latar-blkng);
+}
+
+header {
+    padding: 28px 20px;
+    text-align: center;
+    color: var(--putih);
+    background: linear-gradient(135deg, var(--gradien-1), var(--gradien-2));
+}
+
+h1 {
+margin: 0 0 8px;
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
+}
+h2,
+h3 {
+    color: var(--teks);
+}
+p {
+    max-width: 65ch;
+}
+a {
+    color: var(--teks);
+}
+
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+.nav-list a {
+    display: inline-block;
+    padding: 9px 18px;
+    background-color: var(--kotak-kecil);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.nav-list a:hover,
+.nav-list a:focus-visible {
+    color: var(--putih);
+    background-color: #a76bb1;
+}
+
+body {
+    max-width: 50 rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #640a52;
+    background: #ede3ed;
+}
+
+header,
+main {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: rgb(219, 198, 215);
+    border: 1px solid #ddd;
+    min-width: 0;
+    max-width: 60rem;
+    width: 100%;
+    margin-inline: auto;
+
+}
+
+
+
+h1 {
+    color: #5d1060;
+        font-size: clamp(1.75rem, 1.2rem + 2vw, 3rem);
+    }
+
+    .card-wrap {
+        container-type: inline-size;
+    }
+
+    @container (min-width: 30rem) {
+        .card {
+            padding: 1.5rem;
+        }
+}
+
+p {
+    max-width: 65ch;
+}
+
+button {
+    padding: .75rem 1rem;
+    color: rgb(15, 13, 13);
+    background: #f1c3ce;
+    border: 0;
+    margin-top: 1rem;
+    font: inherit;
+}
+
+
+
+
+.catalog {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: .5rem;
+    background-color: rgb(178, 95, 150);
+    border-radius: 25px;
+    flex: 1 1 15rem;
+    padding: padding var(--space-2, 1rem);
+    border: 1px solid rgb(244, 244, 247);
+    min-width: 0;
+    text-align: center;
+}
+
+.card h2 {
+    overflow-wrap: anywhere;
+    margin: 0;
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid;
+    outline-offset: 3px;
+}
+
+
+@media (min-width: 48rem) {
+    .catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-list {
+        max-width: 100%;
+ .card { transition: none; }
+}
+
+}
+
+.nav-list {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 22px;
+}
+
+label,
+legend {
+    font-weight: bold;
+    color: var(--garis);
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+    padding: 11px 12px;
+    font: inherit;
+    color: var(--teks);
+    background-color: var(--putih);
+    border: 1px solid #282329;
+    border-radius: 8px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: var(--garis);
+}
+
+fieldset {
+    margin: 10px 0;
+    padding: 14px;
+    border: 1px solid var(--garis);
+    border-radius: 10px;
+}
+
+fieldset label {
+    margin-right: 14px;
+    font-weight: normal;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button,
+button[type="submit"] {
+    align-self: flex-start;
+    margin-top: 12px;
+    padding: 11px 22px;
+    font: inherit;
+    font-weight: bold;
+    color: var(--garis);
+    background-color: var(--kotak-kecil);
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover,
+button[type="submit"]:hover {
+    background-color: var(--kotak-kecil);
+}
+
+
+
